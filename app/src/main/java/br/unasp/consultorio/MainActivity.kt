@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val criarLoginBtn = findViewById<Button>(R.id.btnCriarLogin) // ID do botão em bem_vindo.xml
+        val criarLoginBtn = findViewById<Button>(R.id.btnCriarLogin)
         criarLoginBtn.setOnClickListener {
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)

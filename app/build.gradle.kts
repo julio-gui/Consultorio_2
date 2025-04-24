@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "br.unasp.consultorio"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -42,6 +42,24 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Supabase
+    implementation("io.github.jan-tennert.supabase:supabase-kt:3.1.4")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:3.1.4")
+
+    // Ktor Client
+    implementation("io.ktor:ktor-client-core:3.1.2")
+    implementation("io.ktor:ktor-client-android:3.1.2")
+    implementation("io.ktor:ktor-client-okhttp:3.1.2")
+    implementation("io.ktor:ktor-client-logging:3.1.2")
+    implementation("io.ktor:ktor-client-content-negotiation:3.1.2")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:3.1.2")
+
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation(libs.androidx.runtime.android)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
